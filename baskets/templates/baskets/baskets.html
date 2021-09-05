@@ -31,15 +31,16 @@
                         </div>
                     </li>
                     <div class="buttons" style="display: flex; justify-content: space-between; position: relative;">
-                        <button data-id="{{ basket.id }}"
+                        <button id="{{ basket.id }}"
+
                                 value="{{ basket.quantity }}"
-                                type="button"
+                                type="submit"
                                 class="btn btn-success plus"
                                 style="min-width: 49%; font-size: 25px; padding: 0!important;"><b>+</b></button>
 
                         <button data-id="{{ basket.id }}"
                                 value="{{ basket.quantity }}"
-                                type="button"
+                                type="submit"
                                 class="btn btn-success minus"
                                 style="min-width: 49%;font-size: 25px; padding: 0!important;"><b>-</b></button>
                     </div>

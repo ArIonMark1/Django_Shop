@@ -58,9 +58,9 @@ class UserProfileView(SuccessMessageMixin, UpdateView):
         context['baskets'] = Basket.objects.filter(user=self.object)
         return context
 
-    @method_decorator(login_required)
-    def dispatch(self, request, *args, **kwargs):
-        return super(UserProfileView, self).dispatch(**kwargs)
+    # @method_decorator(login_required(login_url='login.html'))
+    # def dispatch(self, request, *args, **kwargs):
+    #     return super(UserProfileView, self).dispatch(**kwargs)
 
 
 # ===============================================================
